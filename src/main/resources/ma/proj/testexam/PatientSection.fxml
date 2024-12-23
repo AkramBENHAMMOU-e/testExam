@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="455.0" prefWidth="931.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.proj.testexam.controller.PatientController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <TextField fx:id="searchField" promptText="Rechercher..." HBox.hgrow="ALWAYS" />
+        <Button onAction="#handleSearch" text="Rechercher" />
+        <Button onAction="#handleAdd" text="Ajouter" />
+    </HBox>
+
+    <TableView fx:id="patientTable" prefHeight="400.0" prefWidth="757.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="64.0" text="ID" />
+            <TableColumn fx:id="nomColumn" prefWidth="112.0" text="Nom" />
+            <TableColumn fx:id="prenomColumn" prefWidth="78.0" text="Prénom" />
+            <TableColumn fx:id="cinColumn" prefWidth="66.0" text="CIN" />
+            <TableColumn fx:id="telephoneColumn" prefWidth="114.0" text="Téléphone" />
+            <TableColumn fx:id="emailColumn" prefWidth="150.0" text="Email" />
+            <TableColumn fx:id="dateNaissanceColumn" prefWidth="93.0" text="Date de Naissance" />
+            <TableColumn fx:id="actionsColumn" prefWidth="233.0" text="Actions" />
+        </columns>
+    </TableView>
+</VBox>

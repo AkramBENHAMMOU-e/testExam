@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.proj.testexam.controller.MainController">
+    <left>
+        <VBox prefHeight="428.0" prefWidth="122.0" style="-fx-background-color: #0004ff;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#Patients" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #002aff; -fx-border-color: white;" text="Patients" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Medecins" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #002aff; -fx-border-color: white;" styleClass="-fx-border-color" text="Medecins" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <fx:include source="PatientSection.fxml" />
+    </center>
+    <top>
+        <HBox prefHeight="54.0" prefWidth="639.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label contentDisplay="CENTER" prefHeight="54.0" prefWidth="788.0" style="-fx-background-color: blue; -fx-min-width: 1090;" text="                                        GESTION DES PROFESSEURS DES DEPATEMENTS" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>
